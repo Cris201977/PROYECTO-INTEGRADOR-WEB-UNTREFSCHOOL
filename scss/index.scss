@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Poppins:wght@200&display=swap');
+@import "_colores";
+@import "_hexagonos";
+@import "_layout";
+@import "_mixins";
+
+
+body{
+    background-color: $bg-claro;
+}
+nav{
+    width: 100%;
+    background-color: $primario;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    div{
+        @include nav-escritorio(100px, 20px, 'Belanosima');
+    }
+}
+a{
+    text-decoration: none;
+    color: $bg-claro;
+    display: inline-block;
+}
+a:hover{
+    color: $dark;
+}
+header figure{
+    width: auto;
+    text-align: center;
+    margin-top: 130px;
+    background-image: url(/imagenes/image_header.jpg);
+    height: 420px;
+}
+header{
+    @include columna_flex;
+    h3{
+        text-align: center;
+    }
+}
+section{
+    @include section-grid-escritorio;
+    font-family: 'Poppins', sans-serif;
+}
+.noticias{
+    @include columna_flex;
+    padding: 100px 40px 40px 40px;
+    background-color: $primario;
+        article {
+        background-color: $bg-claro;
+        color: $dark;
+        font-family: 'Poppins', sans-serif;
+        }
+        h1{
+            color: $bg-claro;
+            font-family: 'Belanosima', sans-serif;
+        }
+}
+article{
+    @include columna_flex;
+    font-size: 20px;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    padding-left: 20px;
+    background-color: $terciario;
+    color: $bg-claro;
+}
+
+section figure{
+    width:100%;
+    height: 90%;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.barra_div{
+    width: auto;
+    height: 10px;
+    margin: 100px 0 100px 0;
+    background-color: $secundario;
+}
+main{
+    @include columna_flex;
+    height: auto;
+    width: 100%;
+    gap: 30px;
+}
+.galeria-hexagonos{
+    @include columna_flex;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: $terciario;
+}
+.contenedor-hexagonos{
+    @include fila_flex;
+}
+h1{
+    align-self: flex-start;
+    font-size: 25px;
+    color: $bg-claro;
+}
+h3{
+    color: $primario;
+}
+figcaption{
+    color: $bg-claro;
+    text-align: center;
+}
+.titulo-principal{
+    color: $primario;
+    font-size: 30px;
+    margin-top: 100px;
+    width: 60%;
+    text-align:right;
+    padding-right: 120px;
+    background-color: $bg-claro;
+    border-radius: 0 50% 50% 0;
+}
+.contenedor-form{
+    margin-top: 100px;
+}
+form{
+    background-color: $secundario;
+    padding: 15px;
+    border-radius: 5%;
+    label, input{
+        color: $dark;
+        font-family: 'Belanosima';
+     }
+     .btn-enviar{
+        background-color: $bg-claro;
+        color: $dark;
+        font-family: 'Belanosima';
+     }
+     h1{
+        font-size: 20px;
+     }
+}
+.tarjeta{
+    width: 90%;
+    margin: 10%;
+    @include columna_flex;
+    color: $dark;
+    background-color: none;
+    font-family: 'Belanosima';
+}
+
+footer{
+    background-color: $primario;
+    width: auto;
+    height: auto;
+    @include footer_columna_grid;
+}
+footer h1{
+    grid-area: titulo;
+    justify-self: center;
+}
+.redes{
+    grid-area: redes;
+}
+.ubicacion{
+    grid-area: mapa;
+    text-align: center;
+}
+.datos-contacto{
+    grid-area: datos;
+    font-size: 12px
+}
+.contenedor-redes{
+color: $bg-claro;
+width: 100%;
+h2{
+    text-align: center;
+}
+}
+.redes{
+    @include fila-flex;
+    gap: 30px;
+    align-content: center;
+    padding-top: 20px;
+}
+.datos-contacto{
+    font-family: "Poppins";
+    color: $bg-claro;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+
+main{
+    gap: 70px;
+}
+nav div{
+    @include nav-movil(15px, 'Belanosima');
+}
+section{
+    @include section-grid-movil;
+}
+section article{
+    grid-area: articulo;
+}
+section figure{
+    grid-area: foto;
+}
+.noticias section {
+    @include section-grid-movil;
+    #articulo-1{
+    grid-area: articulo;
+}
+    #articulo-2{
+    grid-area: foto;
+}
+}
+.contenedor-hexagonos{
+    @include columna-flex;
+    justify-content:center;
+    align-items: center;
+}
+.contenedor-hexagonos figure{
+    @include columna-flex;
+    justify-content:center;
+    align-items: center;
+}
+footer{
+    @include footer-movil;
+}
+article{
+    font-size: 15px;
+}
+.contenedor-form{
+    margin-top: 120px;
+}
+.redes{
+    grid-area: redes;
+}
+.ubicacion{
+    grid-area: mapa;
+    text-align: center;
+}
+.datos-contacto{
+    grid-area: datos;
+}
+}
+@media screen and (max-width: 320px){
+footer{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+    }
+}
+.datos-contacto{
+    figure {
+    height: 20px;
+    }
+    img{
+    visibility: hidden;
+    height: 0;
+}
+}
+.tarjeta{
+    visibility:hidden;
+    height: 30px;
+    overflow: hidden;
+}
+}

@@ -1,0 +1,77 @@
+@mixin nav-escritorio($alto,$font-size, $font){
+    height: $alto;
+    font-size: $font-size;
+    font-family: $font;
+    display: flex;
+    width: 90%;
+    justify-content:center;
+    align-items: center;
+    gap: 3%;
+}
+@mixin nav-movil($font-size, $font){
+    font-size: $font-size;
+    font-family: $font;
+    background-color: $primario;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+@mixin  columna_flex{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    
+}
+@mixin fila_flex{
+    display: flex;
+    width: auto;
+    justify-content:center;
+    align-items: center;
+    gap: 3%;
+}
+@mixin section-grid-escritorio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+}
+@mixin section-grid-movil{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content:center;
+    grid-template-areas:
+    "articulo"
+    "foto";
+    gap: 5px;
+    padding: 15px;
+}
+@mixin footer_columna_grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "redes mapa datos";
+}
+@mixin footer-movil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "titulo titulo"
+    "redes datos"
+    "mapa datos"
+
+}

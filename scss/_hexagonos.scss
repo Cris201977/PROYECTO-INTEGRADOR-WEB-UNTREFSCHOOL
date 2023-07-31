@@ -1,0 +1,21 @@
+@import "_colores";
+
+#triangulo-superior {
+  border-right: 3.4641em solid transparent;
+  border-bottom: 2em solid $back;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width:  0;
+}
+#rectangulo {
+  background-color: $back;
+  height: 4em;
+  width: 6.9282em;
+}
+#triangulo-inferior {
+  border-top: 2em solid $back;
+  border-right: 3.4641em solid transparent;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width: 0;
+}

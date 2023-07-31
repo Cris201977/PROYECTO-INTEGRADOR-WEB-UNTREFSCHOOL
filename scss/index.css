@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Poppins:wght@200&display=swap");
+#triangulo-superior {
+  border-right: 3.4641em solid transparent;
+  border-bottom: 2em solid #EFF5F5;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width: 0;
+}
+
+#rectangulo {
+  background-color: #EFF5F5;
+  height: 4em;
+  width: 6.9282em;
+}
+
+#triangulo-inferior {
+  border-top: 2em solid #EFF5F5;
+  border-right: 3.4641em solid transparent;
+  border-left: 3.4641em solid transparent;
+  height: 0;
+  width: 0;
+}
+
+body {
+  background-color: #EFF5F5;
+}
+
+nav {
+  width: 100%;
+  background-color: #FC7300;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+nav div {
+  height: 100px;
+  font-size: 20px;
+  font-family: "Belanosima";
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: #EFF5F5;
+  display: inline-block;
+}
+
+a:hover {
+  color: #181823;
+}
+
+header figure {
+  width: auto;
+  text-align: center;
+  margin-top: 130px;
+  background-image: url(/imagenes/image_header.jpg);
+  height: 420px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+header h3 {
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 100px 40px 40px 40px;
+  background-color: #FC7300;
+}
+.noticias article {
+  background-color: #EFF5F5;
+  color: #181823;
+  font-family: "Poppins", sans-serif;
+}
+.noticias h1 {
+  color: #181823;
+  font-family: "Belanosima", sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #00425A;
+  color: #EFF5F5;
+}
+
+section figure {
+  width: 100%;
+  height: 90%;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.barra_div {
+  width: auto;
+  height: 10px;
+  margin: 100px 0 100px 0;
+  background-color: #1F8A70;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  height: auto;
+  width: 100%;
+  gap: 30px;
+}
+
+.galeria-hexagonos {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #00425A;
+}
+
+.contenedor-hexagonos {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+h1 {
+  align-self: flex-start;
+  font-size: 25px;
+  color: #EFF5F5;
+}
+
+h3 {
+  color: #FC7300;
+}
+
+figcaption {
+  color: #EFF5F5;
+  text-align: center;
+}
+
+.titulo-principal {
+  color: #FC7300;
+  font-size: 30px;
+  margin-top: 100px;
+  width: 60%;
+  text-align: right;
+  padding-right: 120px;
+  background-color: #EFF5F5;
+  border-radius: 0 50% 50% 0;
+}
+
+.contenedor-form {
+  margin-top: 100px;
+}
+
+form {
+  background-color: #1F8A70;
+  padding: 15px;
+  border-radius: 5%;
+}
+form label, form input {
+  color: #181823;
+  font-family: "Belanosima";
+}
+form .btn-enviar {
+  background-color: #EFF5F5;
+  color: #181823;
+  font-family: "Belanosima";
+}
+form h1 {
+  font-size: 20px;
+}
+
+.tarjeta {
+  width: 90%;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  color: #181823;
+  background-color: none;
+  font-family: "Belanosima";
+}
+
+footer {
+  background-color: #FC7300;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "titulo titulo titulo" "redes mapa datos";
+}
+
+footer h1 {
+  grid-area: titulo;
+  justify-self: center;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.ubicacion {
+  grid-area: mapa;
+  text-align: center;
+}
+
+.datos-contacto {
+  grid-area: datos;
+  font-size: 12px;
+}
+
+.contenedor-redes {
+  color: #EFF5F5;
+  width: 100%;
+}
+.contenedor-redes h2 {
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  gap: 30px;
+  align-content: center;
+  padding-top: 20px;
+}
+
+.datos-contacto {
+  font-family: "Poppins";
+  color: #EFF5F5;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    gap: 70px;
+  }
+  nav div {
+    font-size: 15px;
+    font-family: "Belanosima";
+    background-color: #FC7300;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-template-areas: "articulo" "foto";
+    gap: 5px;
+    padding: 15px;
+  }
+  section article {
+    grid-area: articulo;
+  }
+  section figure {
+    grid-area: foto;
+  }
+  .noticias section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-template-areas: "articulo" "foto";
+    gap: 5px;
+    padding: 15px;
+  }
+  .noticias section #articulo-1 {
+    grid-area: articulo;
+  }
+  .noticias section #articulo-2 {
+    grid-area: foto;
+  }
+  .contenedor-hexagonos {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-hexagonos figure {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "titulo titulo" "redes datos" "mapa datos";
+  }
+  article {
+    font-size: 15px;
+  }
+  .contenedor-form {
+    margin-top: 120px;
+  }
+  .redes {
+    grid-area: redes;
+  }
+  .ubicacion {
+    grid-area: mapa;
+    text-align: center;
+  }
+  .datos-contacto {
+    grid-area: datos;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h1 {
+    text-align: center;
+  }
+  .datos-contacto figure {
+    height: 20px;
+  }
+  .datos-contacto img {
+    visibility: hidden;
+    height: 0;
+  }
+  .tarjeta {
+    visibility: hidden;
+    height: 30px;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=index.css.map */
